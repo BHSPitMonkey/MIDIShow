@@ -167,7 +167,9 @@ public class MainActivity extends AndroidApplication implements OnMidiDeviceDeta
 	public void onMidiNoteOff(MidiInputDevice sender, int cable, int channel,
 			int note, int velocity) {
 		// TODO Auto-generated method stub
-		
+
+        // Pass to listener
+        ((MidiShow) listener).onMidiNoteOff(channel, note, velocity);
 	}
 
 	@Override
