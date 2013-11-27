@@ -31,7 +31,7 @@ public class MidiShow implements ApplicationListener {
         noteVeloc = new int[109];
 
         // Prepare the effect
-        currentEffect = new LinesEffect();
+        currentEffect = new CirclesEffect();
         currentEffect.onCreate(this);
 	}
 
